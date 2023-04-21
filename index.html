@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postulación</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/funcion.js"></script>
+</head>
+<body>
+    <h1>Formulario de Postulación para Chile Limpio</h1>
+    <form action="#" id="forma">
+        <label for="rut">Rut:</label>
+        <input type="text" id="rut" minlength="9" maxlength="10" required>
+        <br>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" minlength="3" maxlength="20" required>
+        <br>
+        <label for="apaterno">Apellido Paterno:</label>
+        <input type="text" id="apaterno" minlength="3" maxlength="20" required>
+        <br>
+        <label for="amaterno">Apellido Materno:</label>
+        <input type="text" id="amaterno" minlength="3" maxlength="20" required>
+        <br>
+        <label for="fecha">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha" required>
+        <br>
+        <br>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" min="18" max="35" required>
+        <br>
+        <label for="genero">Genero:</label>
+        <select name="genero" id="genero" form="forma" required>
+            <option value="" selected disabled hidden>Escoja su genero</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select>
+        <br>
+        <label for="profesion">Profesión:</label>
+        <input type="text" id="profesion" required>
+        <br>
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" required>
+        <br>
+        <label for="celu">Celular:</label>
+        <input type="text" id="celu" minlength="9" maxlength="12" required>
+        <br>
+        <label for="razon">¿Por qué quiere este trabajo?</label>
+        
+        <textarea id="razon" id="razon" form="forma" cols="50" rows="10" required></textarea>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="submit" onclick="CrearCarta();" value="Crear Carta">
+    </form>
+    <p>Su carta de Presentación:</p>
+    <textarea name="presen" id="carta" cols="60" rows="20"></textarea>
+</body>
+</html>
